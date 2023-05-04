@@ -1,6 +1,7 @@
 a {
   text-decoration: none !important;
   color: inherit !important;
+
 }
 
 /* Scroll bar */
@@ -14,4 +15,70 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+
+.productContainer{
+  display: flex;
+  justify-content: flex-start !important;
+}
+button:focus{
+  outline: none !important;
+  box-shadow: none !important;
+
+}
+.product-details{
+  display: flex;
+  width: 800px;
+  margin: auto;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.product-details div{
+  flex:1;
+}
+.product-details .image{
+  margin-right: 100px;
+}
+.product-details img{
+  width:100%;
+  
+}
+/* .product-details .qty-button{
+  background-color: aliceblue;
+  height: 30px;
+  color: black;
+  text-align: center;
+} */
+.price{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.description{
+  margin-top: 50px;
+}
+.prod-title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 800px) {
+  .product-details {
+    width: auto;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-details .image{
+    margin:0
+  }
+  .description{
+    margin: 10px;
+  }
 }
